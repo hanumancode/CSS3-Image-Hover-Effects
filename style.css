@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Scope+One');
+
 body, html {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Scope One', serif;
 }
 
 .box {
@@ -12,6 +14,8 @@ body, html {
     width: 300px;
     height: 400px;
     background: #333;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .box .imgContainer, 
@@ -35,4 +39,29 @@ body, html {
 
 .box .imgContainer img {
     width: 100%;
+}
+
+.box .about {
+    background: #333;
+    top: 0;
+    left: 100%;
+    padding: 60px 30px;
+}
+
+.box:hover .about {
+    top: 0;
+    left: 0;
+}
+
+.box .about h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+}
+
+.box .about {
+    margin: 20px 0 0;
+    color: #fff;
 }
